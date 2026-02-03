@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>Замовлення</title>
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  </head>
+  
+<body>
+  <!-- меню -->
+ <div class="menu">
+	<table> 
+		<tr>
+			<td class="img-logo"><img src="../images/logo.png"></td>
+			
+			<td width="56%" style="text-align:right;">
+				<a href="../index.html"
+				onmouseover="this.style.color='#EBB1E2'"
+				onmouseout="this.style.color='#78648D'">Головна</a>
+				
+				<a href="about.html"
+				onmouseover="this.style.color='#EBB1E2'"
+				onmouseout="this.style.color='#78648D'">Про нас</a>
+				
+				<a href="contacts.html"
+				onmouseover="this.style.color='#EBB1E2'"
+				onmouseout="this.style.color='#78648D'">Контакти</a>
+				
+				<a href="gallery.html"
+				onmouseover="this.style.color='#EBB1E2'"
+				onmouseout="this.style.color='#78648D'">Галерея</a>
+
+			</td>
+			
+			<td width="22%" style="text-align:right;">
+				<a href="#"><img src="../images/fb.png"
+							onmouseover="this.src='../images/fb-hover.png'" 
+							onmouseout="this.src='../images/fb.png'"></a>
+				
+				<a href="#"><img src="../images/insta.png"
+							onmouseover="this.src='../images/insta-hover.png'" 
+							onmouseout="this.src='../images/insta.png'"></a>
+				
+				<a href="#"><img src="../images/tik.png"
+							onmouseover="this.src='../images/tik-hover.png'" 
+							onmouseout="this.src='../images/tik.png'"></a>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- кінець меню -->
+<!-- форма замовлення квітів -->
+<div class="order">
+
+  <h2 class="text-order">Замовлення букета</h2>
+  <div class="text-form">
+    Заповніть форму — ми зв’яжемося з вами для підтвердження та уточнення деталей.
+  </div>
+
+  <form action="mailto:flowers@gortenziya.ua" method="post" enctype="text/plain">
+
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="name" valign="top">
+          <label>Ваше ім’я*</label>
+          <input type="text" name="Ім'я" required>       
+        </td>
+        <td class="phone" valign="top">
+          <label>Телефон*</label>
+          <input type="tel" name="Телефон" required placeholder="+380...">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="forwho" valign="top">
+          <label>Кому букет?*</label>
+          <select name="Кому" required>
+            <option value="">Оберіть варіант</option>
+            <option>Коханій / коханому</option>
+            <option>Мамі</option>
+            <option>Подрузі</option>
+            <option>Колезі</option>
+            <option>партнеру</option>
+            <option>Вчителю / наставнику</option>
+            <option>Для себе</option>
+            <option>Інше</option>
+          </select>
+        </td>
+
+        <td class="reason" valign="top">
+          <label>Привід</label>
+          <select name="Привід">
+            <option value="">Не обов’язково</option>
+            <option>День народження</option>
+            <option>Річниця</option>
+            <option>Весілля</option>
+            <option>Побачення</option>
+            <option>Подяка</option>
+            <option>Вибачення</option>
+            <option>Без приводу</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="budget" valign="top">
+          <label>Бюджет*</label>
+          <select name="Бюджет" required>
+            <option value="">Оберіть бюджет</option>
+            <option>до 800 грн</option>
+            <option>800–1500 грн</option>
+            <option>1500–2500 грн</option>
+            <option>2500+ грн</option>
+          </select>
+        </td>
+
+        <td class="mood" valign="top">
+          <label>Колір / настрій</label>
+          <input type="text" name="Колір/настрій" placeholder="ніжний, пастельний, яскравий...">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="delivery" valign="top">
+          <label>Доставка*</label>
+          <select name="Доставка" required>
+            <option value="">Оберіть</option>
+            <option>Самовивіз</option>
+            <option>Доставка кур’єром</option>
+          </select>
+        </td>
+
+        <td class="datetime" valign="top">
+          <label>Дата і час</label>
+          <input type="text" name="Дата/час" placeholder="наприклад: сьогодні 18:00">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="adress" colspan="2" valign="top">
+          <label>Адреса (якщо доставка)</label>
+          <input type="text" name="Адреса" placeholder="місто, вулиця, будинок, квартира">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="wishes" colspan="2" valign="top">
+          <label>Побажання</label>
+          <textarea name="Побажання" rows="4" placeholder="які квіти подобаються/не подобаються, листівка, підпис тощо"></textarea>
+        </td>
+      </tr>
+    </table>
+
+    <div class="required">
+      * — обов’язкові поля
+    </div>
+
+    <div style="margin-top:16px;">
+      <button class="send" type="submit"
+              onmouseover="this.style.background='#EBB1E2'"
+              onmouseout="this.style.background='#78648D'">
+        Надіслати замовлення
+      </button>
+
+      <button class="clean" type="reset"
+              onmouseover="this.style.background='#FFF2F6'"
+              onmouseout="this.style.background='transparent'">
+        Очистити
+      </button>
+    </div>
+
+  </form>
+</div>
+
+<!-- кінець форми -->  
+ 
+<footer>
+    <p>Усі права належать МАГАЗИНУ "Гортензія"</p>
+</footer>
+
+  </body>
+</html>
