@@ -1,4 +1,4 @@
-.main-page {
+.content {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -7,152 +7,15 @@
     color: aliceblue;
     font-family: sans-serif;
 }
-.header {
-    height: 120px;
-    flex: 0 0 100%;
-    display: flex;
-    flex-direction: column;
-}
-/* Найменша лінія зверху */
-.hed-lin-info {
-    font-size: 14px;
-    background: #292933;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-}
-.hed-lin-info-colm {
-    max-width: 250px;
-}
-.hed-lin-info-colm_img {
-    max-width: 250px;
-    display: flex;
-    max-height: 20px;
-}
-.city-link {
+
+a {
     text-decoration: none;
-    color: #A48B80;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-}
-.arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #A48B80; 
-}
-.hed-lin-info-colm_img img {
-    width: 10px;
-    height: 13px;
-}
-.order {
-    margin-left: 3px;
-    text-decoration: none;
-}
-.english {
-    color: #A48B80;
-}
-/* Кінець найменшої лінії */
-.hed-lin-logo {
-    color: #292933;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: white;
-    height: 50%;
-}
-.hed-lin-logo img {
-    width: 20px;
-    height: 20px;
 }
 
-.header-middle_mobile {
-    display: flex;
-    gap: 12px;
-}
-.header-middle_mobile li {
-    list-style-type: none;
-}
-.header-middle_logo {
-    display: flex;
-    gap: 12px;
-}
-.header-middle_logo img {
-    width: 50px;
-    height: 40px;
-}
-.dicentra {
-    font-size: 25px;
-    letter-spacing: 6px;
-}
-.BCF {
-    font-size: 10px;
-    letter-spacing: 5px;
-}
-.header-middle_basket img {
-    width: 60px;
-    height: 40px;
-}
-.header-middle_serch {
-    display: flex;
-    align-items: center;
-}
-.header-middle_persona {
-    display: flex;
-    align-items: center;
-}
-.hed-lin-menu {
-    background: white;
-    height: 30%;
-}
-.hed-lin-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #292933;
-    font-weight: bold;
-    font-size: 14px;
-}
-.main {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-}
-.main-foto {
-    display: flex;
-    height: 400px;
-}
-.main-foto_left {
-    flex:1;
-    background: #365150;
-    padding: 100px 0 0 120px;
-}
-.main-foto_left h1 {
-    color: #fff;
-    font-size: 35px;
-    font-weight: 800;
-}
-.main-foto_left button {
-    padding: 14px 38px 14px 38px;
-    margin-left: 0px;
-    margin-top: 60px;
-    background-color: #B69B89;
-    border-radius: 20px;
-    border: none;
-    color: #fff;
-}
-.main-foto_right {
-    flex:2;
-    background-image: url('pictures/mainfoto.jpg');
-    background-size: cover;
-}
+
 .footer {
     height: 280px;
     width: 100%;
     background-color: #292933;
     display: block;
 }
-

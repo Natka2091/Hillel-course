@@ -1,0 +1,120 @@
+.header {
+    height: 204px;
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Найменша лінія зверху */
+.header-top {
+    font-size: 14px;
+    background: #292933;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+.header-top a {
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.header-top a:first-child {
+    color:#A48B80;
+}
+.header-top a:nth-child(6) {
+    color:#A48B80;
+}
+.header-top a span {
+    color:#A48B80;
+}
+.order-selector {
+    display: flex;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #A48B80; 
+}
+.order-selector img {
+    width: 20px;
+    height: 16px;
+}
+
+/* Середня лінія */
+
+.header-middle {
+    color: #292933;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 250px;
+    background: white;
+    height: 50%;
+}
+.header-middle-selector {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+}
+.header-middle-selector img[src$=".jpg"] {
+    width: 20px;
+    height: 20px;
+}
+.header-middle-selector img[src$=".svg"] {
+    width: 8px;
+    height: 5px;
+}
+.header-middle-selector img[src$=".png"] {
+    width: 80px;
+    height: 60px;
+}
+.back-call {
+    color: #A48B80;
+}
+.logo-text-top {
+    font-size: 32px;
+    letter-spacing: 6px;
+}
+.logo-text-bottom {
+    font-size: 10px;
+    letter-spacing: 7px;
+}
+.header-middle_basket {
+    width: 60px;
+    height: 40px;
+}
+/* нижня лінія*/
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 30%;
+    gap: 90px;
+}
+.header-bottom_list {
+  display: flex;
+  gap: 90px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.header-bottom li {
+    text-transform: uppercase;
+    list-style: none;
+    color: #292933;
+    font-weight: 700;
+}
+.hed-lin-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #292933;
+    font-weight: bold;
+    font-size: 14px;
+}
