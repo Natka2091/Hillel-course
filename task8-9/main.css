@@ -1,21 +1,31 @@
 .main {
   display: flex;
+  flex-direction: column; 
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  justify-content: space-between;
+  padding: 60px 140px;
+  box-sizing: border-box;
+  gap: 80px;    
 }
+/*Перший екран order*/
 .order {
+    display: flex;
+    padding: 0;
+}
+.order_text {
     height: 400px;
     flex:1;
     background: #365150;
     padding: 100px 0 0 120px;
 }
-.order h1 {
+.text-for-order {
     color: #fff;
     font-size: 35px;
     font-weight: 800;
 }
-.order button {
+.button-for-order {
     padding: 14px 38px 14px 38px;
     margin-left: 0px;
     margin-top: 60px;
@@ -23,13 +33,129 @@
     border-radius: 20px;
     border: none;
     color: #fff;
+    font-weight: 500;
 }
 .poster {
     flex:2;
 }
-.poster img {
+.poster-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/*Другий екран offers*/
+.offers {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.offers_all-card {
+    display: flex;
+}
+.offers_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 18px;
+    padding: 16px 28px 16px 28px;
+}
+.img-card {
+    width: 280px;
+    height: 300px;
+}
+.offers_button {
+    background: #292933;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 16px 28px 16px 28px;
+    margin-top: 12px;
+}
+.offers_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+}
+.offers_colors-price {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+.price-pink {
+    font-size: 28px;
+    font-weight: 500;
+    color: #fc4ac4;
+}
+.price-black {
+    font-size: 28px;
+    font-weight: 500;
+    color: #353535;
+}
+.money {
+    font-size: 16px;
+}
+.icon-img-price {
+    width: 14px;
+    height: 14px;
+}
+.offers_text-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-us {
+    display: flex;
+    gap: 200px;
+}
+.about-us_column1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 200px;
+    background-image: url('icon/bg-tulip.svg');
+    background-repeat: no-repeat;     
+    background-position: 230px 800px;     
+    background-size: 40%;  
+}
+.about-us_column2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 200px;
+    background-image: url('icon/bg-flower.svg');
+    background-repeat: no-repeat;     
+    background-position: 20px 550px;     
+    background-size: 60%;  
+}
+.about-us_text-img {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.about-us_img {
+    width: 400px;
+    height: auto;
+}
+.about-us_main-text {
+    line-height: normal;
+    font-size: 22px;
+    font-weight: 400;
+    color: #292933;
+    padding-left: 70px;
+    padding-bottom: 30px;
+}
+.about-us_text-p {
+    line-height: 22px;
+    padding-left: 70px;
+    color: #353535;
 }
