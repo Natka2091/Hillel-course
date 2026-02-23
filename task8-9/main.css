@@ -5,9 +5,8 @@
   width: 100%;
   margin: 0 auto;
   justify-content: space-between;
-  padding: 60px 140px;
+  padding: 60px 0;
   box-sizing: border-box;
-  gap: 80px;    
 }
 /*Перший екран order*/
 .order {
@@ -115,7 +114,9 @@
 }
 .about-us {
     display: flex;
+    padding: 0 140px;
     gap: 200px;
+    margin-top: 60px;
 }
 .about-us_column1 {
     display: flex;
@@ -159,3 +160,79 @@
     padding-left: 70px;
     color: #353535;
 }
+/*Форма*/
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #292933;
+    color: #fff;
+    height: 280px;
+    width: 100%;
+    gap: 30px;
+    background-image: url('icon/bg-leaves.svg');
+    background-repeat: no-repeat;     
+    background-position: 300px;     
+    background-size: 60%;
+    margin-top: 60px;
+}
+.form_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.form_option {
+    display: flex;
+    gap: 10px;
+}
+.form_selection{
+    padding: 10px 16px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+}
+.form_send {
+    width: 200px;
+    height: 50px;
+    background-color: #B69B89;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+}
+
+.reviews {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 60px 0;
+    background-color: #F6F3F1;
+    gap: 40px;
+}
+.reviews_cards {
+    display: flex;
+    gap: 40px;
+}
+.reviews_content {
+    background: #fff;
+    padding: 30px 30px 30px 100px;
+    background-image: url('icon/ic-quotes.png');
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+    flex: 1;
+    max-width: 400px;
+}
+.content-text {
+    color: rgb(87, 83, 83);
+}
+.content-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
