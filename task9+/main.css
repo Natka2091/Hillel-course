@@ -1,0 +1,145 @@
+
+.main-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 19px;
+    width: 1366px;
+}
+.main-foto_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap: 20px;
+}
+h1 {
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 3%;
+    color: white;
+}
+.main-foto_text {
+    color: white;
+    font-size: 38px;
+    font: 'Cormorant Garamond';
+    font-weight: 400;
+    font-style: italic;
+}.main {
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    padding-left: 98px;
+    padding-right: 98px;
+}
+.new-items {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.new-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 130px;
+}
+.new-items_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+.new-items_shop-now {
+    display: flex;
+    justify-content: center;
+}
+.new-pictures {
+    display: flex;
+    gap: 30px;
+}
+.new-items_jewelry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.new-items_numbers {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 15px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.blog_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+.blog_content {
+    display: flex;
+    gap: 30px;
+}
+.blog_left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.left-publication {
+    display: flex;
+}
+.publication-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 285px;
+    height: 300px;
+    background-color: #f0eae4;
+    gap: 25px;
+}
+.blog_right {
+    background-image: url('pictures/alve-odonnell.jpg');
+    width: 570px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 970px;
+}
+.questions_blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+.questions_text {
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    padding: 50px;
+    border-width: 1px;
+    border-color: #A87B62;
+    gap: 20px;
+    width: 970px;
+}
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    padding-bottom: 20px;
+}
