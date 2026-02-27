@@ -165,3 +165,12 @@ h1 {
     font-family: 'Poppins';
     font-weight: 700;
 }
+.lower-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+.numbering {
+    letter-spacing: 15px;
+}

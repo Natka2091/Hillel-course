@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;       
+}
+.login {
+    width: 430px;
+    height: 586px;
+    background-color: #F0EAE4;
+}
+.main-foto {
+    background-image: url(../pictures/login-main.jpg);
+    height: 138px;
+    background-size: cover;
+    position: relative;
+}
+.login_vector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
