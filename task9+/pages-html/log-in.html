@@ -11,18 +11,30 @@
 <body>
   <section class="login">
     <article class="main-foto">
-      <img class="login_vector" src="../pictures/Vector-X.png" alt="Vector-X"> 
+      <a href="../index.html">
+        <img class="login_vector" src="../pictures/Vector-X.png" alt="Vector-X"> 
+      </a>
     </article>
-    <article>
-      <h2>Log In</h2>
-      <form>
-
-        <button></button>
+    <article class="form-input">
+      <h2 class="login_title">Log In</h2>
+      <form >
+        <div class="input-group">
+            <input class="custom-input" type="email" placeholder="Your E-mail">
+        </div>
+        <div class="input-group">
+            <input class="custom-input" type="password" placeholder="Password">
+            <div class="forgot-link-container">
+              <a href="#" class="forgot-password">Forgot your password?</a>
+            </div>
+        </div>
+        <div class="button">
+          <button class="login_button-login" type="submit">Log in</button>
+          <div class="lower-button">
+            <span class="lower-button_text">Don’t have an account?</span>
+            <button class="login_button-singup" type="submit">Sign up</button>
+          </div>
+        </div>
       </form>
-      <div>
-        <span></span>
-        <button></button>
-      </div>
     </article>
   </section>
 </body>

@@ -21,3 +21,78 @@ body {
     top: 20px;
     right: 20px;
 }
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    text-align: left;
+    width: 340PX;
+}
+.login_title {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 45px;
+}
+.custom-input {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    font-size: 14px;
+}
+.custom-input::placeholder {
+    color: #A0A0A0;
+    font-family: 'Poppins';
+}
+.forgot-link-container {
+    padding-left: 220px;
+    margin-top: 8px;
+}
+.forgot-password {
+    font-size: 12px;
+    color: #8E8E8E;
+    text-decoration: none;
+    font-family: 'Poppins'; 
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.login_button-login {
+    padding: 28px;
+    background-color: #A87B62;
+    border: none;
+    color: white;
+}
+.lower-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.lower-button_text {
+    font-size: 14px;
+    color: #8E8E8E;
+    text-decoration: none;
+    font-family: 'Poppins'; 
+}
+.login_button-singup {
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins';
+}
+
