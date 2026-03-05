@@ -69,10 +69,22 @@ h1 {
     align-items: center;
     gap: 25px;
 }
+.new-items_jewelry-hide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
 .new-items_numbers {
     display: flex;
     justify-content: center;
     letter-spacing: 15px;
+}
+.new-items_numbers-tablet {
+    display: none;
+}
+.new-items_numbers-phone {
+    display: none
 }
 
 .blog {
@@ -119,6 +131,9 @@ h1 {
     display: flex;
     align-items: end;
     justify-content: end;
+}
+.blog_right_tablet {
+    display: none;
 }
 .questions {
     display: flex;
@@ -184,4 +199,91 @@ h5 {
 .examples_type-three {
     width: 399px;
     height: 412px;
+}
+
+@media (max-width: 768px) {
+    .main {
+        gap: 80px;
+    }
+    .new-items {
+        gap: 50px;
+    }
+    .new-in {
+        padding-top: 80px;
+    }
+    .new-pictures_foto {
+        width: 324px;
+        height: 340px;
+    }
+    .new-items_numbers {
+        display: none;
+    }
+    .new-items_jewelry-hide {
+        display: none;
+    }
+    .new-items_numbers-tablet {
+        display: flex;
+        justify-content: center;
+        letter-spacing: 15px;
+    }
+    .new-items_numbers-phone {
+        display: none;
+    }
+    .blog_content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .blog_right {
+        display: none;
+    }
+    .blog_right_tablet {
+        display: flex;
+    }
+    .blog_right_tablet-foto {
+        width: 339px;
+        height: 300px;
+    }
+    .publication-text {
+        width: 339px;
+        height: 300px;
+    }
+    .blog-left_foto {
+        width: 339px;
+        height: 300px;
+    }
+    .questions_text {
+        width: 678px;
+    }
+   .chjewellery_examples {
+        gap: 16px;
+   }
+   .examples-blok {
+        gap: 20px;
+   }
+   .examples_type-one {
+        width: 133px;
+        height: 133px;
+   }
+   .examples_type-two {
+        width: 133px;
+        height: 87px;
+   }
+   .examples_type-three {
+        width: 231px;
+        height: 240px;
+   }
+}
+@media (max-width: 320px) {
+    .new-items_numbers-phone {
+        display: flex;
+        justify-content: center;
+        letter-spacing: 15px;
+    }
+    .new-items_numbers {
+        display: none;
+    }
+    .new-items_numbers-tablet {
+        display: none;
+    }
 }
