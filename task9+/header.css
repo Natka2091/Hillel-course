@@ -27,18 +27,32 @@
 .vector-tablet-basket {
     display: none;
 }
+.header_top-tablet {
+    display: none;
+}
 
 
 
 @media (max-width: 768px) {
-    .search-container {
-        display: none;
-    }
-    .header_text {
+    .header_top {
         display: none;
     }
     .header_menu {
         display: none;
     }
-
+    .header_top-tablet {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .logo-phone {
+        width: 66px;
+        height: 66px;
+    }
+}
+@media (max-width: 768px) {
+    .logo-phone {
+        width: 52px;
+        height: 52px;
+    }
 }

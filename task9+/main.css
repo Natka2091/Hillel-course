@@ -200,6 +200,9 @@ h5 {
     width: 399px;
     height: 412px;
 }
+.chjewellery_examples-phone {
+    display: none;
+}
 
 @media (max-width: 768px) {
     .main {
@@ -275,6 +278,10 @@ h5 {
    }
 }
 @media (max-width: 320px) {
+    .main-foto {
+        background-image: url(pictures/background-foto-phone.jpg);
+        width: 320px;
+    }
     .new-items_numbers-phone {
         display: flex;
         justify-content: center;
@@ -285,5 +292,93 @@ h5 {
     }
     .new-items_numbers-tablet {
         display: none;
+    }
+    .main-foto_title {
+        padding-top: 200px;
+        gap: 16px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    .main-foto_text {
+        font-size: 34px;
+    }
+     .new-pictures_foto {
+        width: 130px;
+        height: 136px;
+    }
+    .new-items_vector-left {
+        display: none;
+    }
+     .new-items_vector-right {
+        display: none;
+    }
+    .new-in {
+        justify-content: center;
+        padding-top: 70px;
+    }
+    .blog_right {
+        display: none;
+    }
+    .blog_right_tablet-foto {
+        width: 290px;
+        height: 256px;
+    }
+    .publication-text {
+        width: 290px;
+        height: 256px;
+    }
+    .blog-left_foto {
+        width: 290px;
+        height: 256px;
+    }
+    .left-publication {
+        display: flex;
+        flex-direction: column;
+    }
+    .blog_right_tablet {
+        display: flex;
+        flex-direction: column;
+    }
+    .questions {
+        gap: 40px;
+        width: 290px;
+    }
+    .questions_text {
+        padding: 22px;
+        border-width: 1px;
+        border-color: #A87B62;
+        gap: 20px;
+        width: 290px;
+        font-size: 14px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    .chjewellery_examples {
+        display: none;
+    }
+    .chjewellery_examples-phone {
+        width: 290px;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    .examples-blok-phone {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+    }
+    .examples_phone-one {
+        width: 133px;
+        height: 133px;
+    }
+    .examples_phone-two {
+        width: 133px;
+        height: 87px;
+    }
+    .examples_phone-three {
+        width: 133px;
+        height: 247px;
     }
 }

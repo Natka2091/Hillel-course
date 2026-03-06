@@ -39,6 +39,9 @@
     display: flex;
     gap: 15px;
 }
+.footer_blok-phone {
+    display: none;
+}
 
 @media (max-width: 768px) {
     .footer {
@@ -91,4 +94,36 @@
         display: flex;
         gap: 15px;
     }
+    .footer_blok-phone {
+        display: none;
+    }
 }
+
+@media (max-width: 320px) {
+    .footer {
+        display: none;
+    }
+    .footer-tablet {
+        height: 773px;
+        margin-top: 70px;
+        padding-left: 15px;
+    }
+    .footer_first-blok-tablet {
+        gap: 30px;
+        padding-right: 15px;
+    }
+    .footer_second-blok-tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .hidden-phone {
+        display: none;
+    }
+    .footer_blok-phone {
+        display: flex;
+        gap: 30px;
+    }
+}
+

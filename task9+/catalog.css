@@ -69,3 +69,33 @@ h1 {
 .numbering {
     letter-spacing: 15px;
 }
+.main-filter-tablet-phone {
+    display: none;
+}
+.header_top-tablet {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .main-foto {
+        background-image: url(pictures/main-catalog-tablet.jpg);
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 34px;
+    }
+    .header {
+        display: none;
+    }
+    .main-foto_text {
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .header_top-tablet {
+        display: flex;
+    }
+    .main-filter {
+        display: none;
+    }
+    
+}
