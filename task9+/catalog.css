@@ -75,6 +75,15 @@ h1 {
 .header_top-tablet {
     display: none;
 }
+.filter-tablet-phone {
+    display: none;
+}
+.lower-container-phone {
+    display: none;
+}
+.jewelry-phone {
+     display: none;
+}
 
 @media (max-width: 768px) {
     .main-foto {
@@ -97,5 +106,63 @@ h1 {
     .main-filter {
         display: none;
     }
+    .big-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+    }
+    .jewelry_foto {
+        width: 206px;
+        height: 208px;
+    }
+    .jewelry {
+        padding: 30px;
+    }
+    .filter-tablet-phone {
+        border: none;
+        width: 678px;
+        height: 68px;
+        background-color: #A87B62;
+    }
+    .lower-container-phone {
+        display: none;
+    }
+    .jewelry-phone {
+        display: none;
+    }
     
+}
+
+@media (max-width: 320px) {
+   .jewelry {
+        display: none;
+    }
+    .lower-container-phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+    }
+    .numbering-phone {
+        letter-spacing: 15px;
+    }
+    .jewelry-phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .jewelry_foto {
+        width: 130px;
+        height: 136px;
+    }
+    .jewelry_text {
+        font-size: 14px;
+    }
+    .jewelry_price {
+        font-size: 14px;
+    }
+
 }
