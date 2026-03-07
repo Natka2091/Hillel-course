@@ -1,0 +1,455 @@
+.main-foto {
+    background-image: url(pictures/main-foto.jpg);
+    height: 463px;
+    background-size: cover;
+    margin-top: 18px;
+}
+.main-foto_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 195px;
+    gap: 20px;
+}
+h1 {
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 3%;
+    color: white;
+}
+.main-foto_text {
+    color: white;
+    font-size: 38px;
+    font: 'Cormorant Garamond';
+    font-weight: 400;
+    font-style: italic;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+.new-items {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.new-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    gap: 503px;
+}
+.new-items_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+.new-items_shop-now {
+    display: flex;
+    justify-content: center;
+}
+.new-pictures {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.new-pictures_tablet-phone {
+    display: flex;
+    gap: 30px;
+}
+.new-pictures_desktop {
+    display: flex;
+    gap: 30px;
+}
+.new-items_jewelry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.new-pictures_foto {
+    width: 270px;
+    height: 284px;
+}
+.new-items_numbers {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 15px;
+}
+.new-items_numbers-tablet {
+    display: none;
+}
+.new-items_numbers-phone {
+    display: none;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.blog_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    text-align: center;
+}
+.blog_content {
+    display: flex;
+    gap: 30px;
+}
+.blog_left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.left-publication {
+    display: flex;
+}
+.blog-left_foto {
+    width: 285px;
+    height: 300px;
+}
+.publication-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 285px;
+    height: 300px;
+    background-color: #f0eae4;
+    gap: 25px;
+    text-align: center;
+}
+.blog_right {
+    background-image: url('pictures/alve-odonnell.jpg');
+    width: 570px;
+    height: 630px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.blog_right_tablet {
+    display: none;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 970px;
+}
+h2 {
+    letter-spacing: 3%;
+}
+.questions_blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+.questions_text {
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    padding: 50px;
+    border-width: 1px;
+    border-color: #A87B62;
+    gap: 20px;
+    width: 970px;
+}
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    padding-bottom: 20px;
+}
+.chjewellery {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.chjewellery_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    text-align: center;
+}
+.chjewellery_examples {
+    display: flex;
+    gap: 27px;
+}
+.examples-blok {
+    display: flex;
+    gap: 27px;
+}
+.examples-blok_tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+.examples_type-one {
+    width: 230px;
+    height: 230px;
+}
+.examples_type-two {
+    width: 230px;
+    height: 150px;
+}
+.examples_type-three {
+    width: 399px;
+    height: 412px;
+}
+.examples-small-left {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+.examples-small-right_phone {
+    display: flex;
+    gap: 27px;
+}
+.examples-small-right {
+    display: flex;
+    gap: 27px;
+}
+
+
+@media (max-width: 768px) {
+    .main-foto {
+        background-image: url(pictures/main-foto-tablet.png);
+    }
+    .main {
+        gap: 80px;
+    }
+    .new-in {
+        gap: 250px;
+    }
+    .new-pictures_foto {
+        width: 324px;
+        height: 340px;
+    }
+    .new-pictures_desktop {
+        display: none;
+    }
+    .new-items_numbers {
+        display: none;
+    }
+    .new-items_numbers-tablet {
+        display: flex;
+        justify-content: center;
+        letter-spacing: 15px;
+    }
+    .new-items_numbers-phone {
+        display: none;
+    }
+    .blog_content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .blog_left {
+        gap: 50px;
+    }
+    .blog-left_foto {
+        width: 339px;
+        height: 300px;
+    }
+    .publication-text {
+        width: 339px;
+        height: 300px;
+    }
+    .blog_right {
+        display: none;
+    }
+    .blog_right_tablet {
+        display: flex;
+    }
+    .blog_right_tablet-foto {
+        width: 339px;
+        height: 300px;
+    }
+    .questions_blocks {
+        width: 678px;
+    }
+    .questions {
+        width: 678px;
+    }
+    .questions_text {
+        width: 678px;
+    }
+    .chjewellery_examples {
+        gap: 16px;
+    }
+    .examples-blok {
+        gap: 16px;
+    }
+    .examples-blok_tablet  {
+        gap: 21px;
+    }
+    .examples_type-one {
+        width: 133px;
+        height: 133px;
+   }
+   .examples_type-two {
+        width: 133px;
+        height: 87px;
+   }
+   .examples_type-three {
+        width: 231px;
+        height: 240px;
+   }
+   .examples-small-left {
+        gap: 20px;
+   }
+   .examples-small-right_phone {
+        gap: 16px;
+    }
+    .examples-small-right {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-foto {
+        background-image: url(pictures/main-foto-phone.jpg);
+    }
+    .main-foto_title {
+        gap: 16px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    .main-foto_text {
+        font-size: 34px;
+    }
+    .main {
+        gap: 70px;
+    }
+    .new-items_vector-left {
+        display: none;
+    }
+    .new-items_vector-right {
+        display: none;
+    }
+    .new-pictures_foto {
+        width: 130px;
+        height: 136px;
+    }
+    .new-pictures_desktop {
+        display: none;
+    }
+    .new-items_numbers {
+        display: none;
+    }
+    .new-items_numbers-tablet {
+        display: none;
+    }
+    .new-items_numbers-phone {
+        display: flex;
+        justify-content: center;
+        letter-spacing: 15px;
+    }
+    .blog_content {
+        gap: 40px;
+    }
+    .blog_left {
+        gap: 40px;
+    }
+    .left-publication {
+        flex-direction: column;
+    }
+    .left-publication:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+    .blog-left_foto {
+        width: 290px;
+        height: 256px;
+    }
+    .publication-text {
+        width: 290px;
+        height: 256px;
+    }
+    .blog_right {
+        display: none;
+    }
+    .blog_right_tablet {
+        display: flex;
+        flex-direction: column;
+    }
+    .blog_right_tablet-foto {
+        width: 290px;
+        height: 256px;
+    }
+    .questions {
+        gap: 40px;
+        width: 290px;
+    }
+    .questions_text {
+        padding: 22px;
+        border-width: 1px;
+        border-color: #A87B62;
+        gap: 20px;
+        width: 290px;
+        font-size: 14px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    .questions {
+        width: 320px;
+    }
+    .questions_title {
+        text-align: center;
+    }
+    .questions_blocks {
+        width: 320px;
+    }
+    .questions_text {
+        width: 290px;
+    }
+    .chjewellery_examples {
+        flex-direction: column;
+        gap: 27px;
+    }
+    .examples-blok {
+        gap: 24px;
+    }
+    .examples_type-one {
+        width: 133px;
+        height: 133px;
+    }
+    .examples_type-two {
+        width: 133px;
+        height: 87px;
+    }
+    .examples_type-three {
+        width: 133px;
+        height: 247px;
+    }
+    .examples-small-left {
+        gap: 27px;
+   }
+   .examples-small-right_phone {
+        display: none;
+    }
+    .examples-small-right {
+        gap: 24px;
+    }
+   
+}
