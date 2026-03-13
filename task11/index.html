@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="header.css">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="stylesheet" type="text/css" href="log-in.css">
+  <link rel="stylesheet" type="text/css" href="menu.css">
   <title>Home work</title>
 </head>
 
@@ -265,4 +267,61 @@
             </nav>
         </article>
     </footer>
+
+    <section class="login-body hidden">
+        <article class="login_main-foto">
+            <img class="login_vector" src="pictures/Vector-X.png" alt="Vector-X">
+        </article>
+        <article class="form-input">
+        <h2 class="login_title">Log In</h2>
+        <form >
+            <div class="input-group">
+                <input class="custom-input" type="email" placeholder="Your E-mail">
+            </div>
+            <div class="input-group">
+                <input class="custom-input" type="password" placeholder="Password">
+                <div class="forgot-link-container">
+                <a href="#" class="forgot-password">Forgot your password?</a>
+                </div>
+            </div>
+            <div class="button">
+            <button class="login_button-login" type="submit">Log in</button>
+            <div class="lower-button">
+                <span class="lower-button_text">Don’t have an account?</span>
+                <button class="login_button-singup" type="submit">Sign up</button>
+            </div>
+            </div>
+        </form>
+        </article>
+    </section>
+
+     <section class="pop-up-menu hidden">
+        <article class="menu_head">
+            <img class="pop-up-menu_vector-menu" src="pictures/Vector-menu-menu.png" alt="Vector-menu-menu">
+            <img src="pictures/logo-menu.png" alt="logo-menu">
+            <img class="pop-up-menu_vector-basket" src="pictures/Vector-menu-basket.png" alt="Vector-menu-basket">
+        </article>
+        <form role="search" class="menu_search-container">
+            <img src="pictures/Vector-menu-search.png" alt="search logo">
+            <input class="header_input" type="search" aria-label="Пошук по сайту">
+        </form>
+        <nav>
+            <ul class="pop-up-menu_nav-first">
+                <li>What's new</li>
+                <li>Chokers</li>
+                <li>Necklaces</li>
+                <li>Rings</li>
+                <li>Earrings</li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="pop-up-menu_nav-second">
+                <li>About CH</li>
+                <li>Stores & Hours</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+        <button class="menu_button">Login</button>
+    </section>
+
 </body>
