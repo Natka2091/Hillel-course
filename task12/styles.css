@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    padding: 24px;
+}
+
+@media (max-width: 768px) {
+
+}
+@media (max-width: 320px) {
+
+}
