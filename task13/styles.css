@@ -1,0 +1,18 @@
+.svg-container {
+    background-color: #f4f4f4;
+}
+ .animated-circle {
+    stroke-width: 5px;
+    animation: colorChange 3s infinite alternate ease-in-out;
+}
+
+@keyframes colorChange {
+    from {
+        fill: #FF5733;
+        stroke: #900C3F;
+    }
+    to {
+        fill: #33FF57;
+        stroke: #1D8348;
+    }
+}     
