@@ -1,5 +1,5 @@
-let name = prompt('Яка "офіційна" назва JavaScript?', '')
-if (name == 'ECMAScript') {
+const name = prompt('Яка "офіційна" назва JavaScript?', '')
+if (name === 'ECMAScript') {
     alert ('Правильно');
 }
 else {

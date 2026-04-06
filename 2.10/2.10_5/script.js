@@ -1,6 +1,5 @@
-let login = prompt ('Хто ви?', '');
-let message = (login == 'Працівник') ? 'Привіт' :
-  (login == 'Директор') ? 'Вітаю' :
-  (login == '') ? 'Немає логіну' :
-  '';
+const login = prompt ('Хто ви?', '');
+const message = login === 'Працівник' ? 'Привіт' :
+  login === 'Директор' ? 'Вітаю' :
+ 'Немає логіну';
 alert (message);
