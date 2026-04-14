@@ -7,13 +7,15 @@ function min(a, b) {
   }
 }
 // завдання 4
-function pow(x, n) {
+function pow(x, n = 2) {
     if (!Number.isInteger(n) || n < 1) {
     throw new Error("Степінь n має бути натуральним числом");
   }
-  return (x ** n);
+   (x ** n);
 }
 const x = +prompt("base: ", "");
 const n = +prompt("exponent: ", "");
 const result = pow(x, n);
 alert ("результат: " + result);
+
+pow(3, 4)
