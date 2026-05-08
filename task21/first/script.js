@@ -15,3 +15,7 @@ curriedAdd(1)(2)(3);
 
  
 
+(function () {
+  const a = 'kjdfhsdg'
+  console.log(a);
+})()

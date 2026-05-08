@@ -6,8 +6,11 @@ function curriedDomain(http) {
     }
 }
 
-
+const url = curriedDomain('http')('example')('com')
+console.log(url)
+/*
 const protocolSetter = curriedDomain('https')
 const domainNameSetter = protocolSetter('example')
 const fullDomain = domainNameSetter('com')
 console.log('Full Domain:', fullDomain)
+*/
