@@ -158,9 +158,6 @@ privateData.set(user2, {
 });
 console.log(privateData.get(user2));
 
-
-
-
 /* 9 Створи кілька об’єктів користувачів.
 Додай їх у WeakSet.
 Перевір:
@@ -188,130 +185,197 @@ allUsers.add(user5);
 console.log(allUsers.has(user3));
 console.log(allUsers.has(user4));
 
-
-/* 10 Створи:
-
+// 10 Створи:
 const animal = {
   eat() {
     console.log("eating");
   }
 };
 
-Потім:
-
+//Потім:
 const dog = {};
-
-Зв’яжи prototype так, щоб:
-
+/*Зв’яжи prototype так, щоб:
 dog.eat()
-
 працювало.
 */
+Object.setPrototypeOf(dog, animal);
+dog.eat();
+console.log(dog);
+console.log(dog.__proto__ === animal);
 
 /* 11 Створи:
-
 об’єкт з prototype
 однакову властивість у prototype і в самому об’єкті
 
 Подивись:
 що JS бере першим.
 */
+const fruit = {
+    type: "apple"
+};
+const exotic = {
+    type: "banana"
+};
+
+Object.setPrototypeOf(exotic, fruit);
+console.log(exotic.type); //"banana"
 
 /* 12 Створи конструктор:
-
 function User(name, age)
 
 Щоб можна було:
-
 const user1 = new User("Ivan", 20);
 
 І вивести:
-
 user1.name
 user1.age
 */
+function User(name, age) {
+    this.name = name;
+    this.age = age;
+};
+const user1 = new User("Ivan", 20);
+console.log(user1.name);
+console.log(user1.age);
 
 /* 13 Додай:
-
 sayHi()
 
 через:
-
 User.prototype
 */
+User.prototype.sayHi = function() {
+    console.log(`Hi my name is ${this.name}`)
+};
+const user8 = new User("Marina", 19);
+console.log(user8.name);
 
 /* 14 Створи клас:
-
 Car
 
 з:
-
 brand
 year
 
 І методом:
-
 showInfo()
 */
+class Car {
+    constructor(brand, year) {
+        this.brand = brand;
+        this.year = year;
+    }
+
+    showInfo() {
+        console.log(`This ${this.brand} vehicle was manufactured in ${this.year}`);
+    }
+};
+
+const car = new Car("Toyota", 1998);
+car.showInfo();
 
 /* 15 Створи:
-
 BMW
 Audi
 Tesla
 
 через один клас.
 */
+const bmw = new Car("BMW", 2023);
+const audi = new Car("Audi", 2021);
+const tesla = new Car("Tesla", 2012);
+
+bmw.showInfo();
+
 
 /* 16 Створи:
-
 клас Animal
 метод eat()
 
 Потім:
-
 клас Dog
 метод bark()
 
 Через extends.
 */
+class Animals {
+    constructor(name) {
+        this.name = name;
+    }
+    eat() {
+        console.log(`${this.name} eating`);
+    }
+    sound() {
+        console.log("some sound");
+    }
+}
 
-/* 17 У Animal:
+class Dog extends Animals {
+    bark() {
+        console.log("Woof");
+    }
+    sound() {
+        console.log("Гав")
+    }
+}
+const dogs = new Dog("Bobik");
+dogs.eat();
+dogs.bark();
+dogs.sound();
 
+
+/* 17 У Animals:
 sound()
 
 У Dog перевизнач:
-щоб собака казала "Woof".
+щоб собака казала "Гав".
 */
 
-/* 18 Створи:
 
+
+/* 18 Створи:
 class MathHelper
 
 і статичний метод:
-
 add(a, b)
 
 Виклик:
-
 MathHelper.add(2, 3)
 */
+class MathHelper {
+    static add(a, b) {
+        return a + b;
+    }
+}
+console.log(MathHelper.add(2, 3));
 
 /* 19 Створи клас:
-
 User
 
 з приватним полем:
-
 #password
 
 І методом:
-
 checkPassword()
 */
 
-/* 20 Створи:
+class Users {
+    #password
+    constructor(password) {
+        this.#password = password;
+    }
+    checkPassword() {
+        if (this.#password.length >= 7) {
+            console.log("Good");
+        } else {
+            console.log("Password too short");
+        }
+    }
+}
+const pass = new Users('8827827');
+pass.checkPassword();
 
+/* 20 Створи:
 клас Student
 поля:
 name
@@ -319,13 +383,11 @@ age
 grades
 
 Методи:
-
 додати оцінку
 порахувати середній бал
 показати інформацію
 
 Потім:
-
 створи кілька студентів
 збережи їх у Map
 у Set збережи унікальні предмети
